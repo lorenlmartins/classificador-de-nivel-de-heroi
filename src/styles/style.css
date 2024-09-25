@@ -1,0 +1,77 @@
+body {
+    font-family: 'Permanent Marker', cursive; 
+    background-image: url('../images/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0; 
+    color: #333; 
+}
+
+.container {
+    text-align: center; 
+    padding: 40px; 
+    margin: 50px auto; 
+    border-radius: 20px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px); 
+    border: 2px solid #6200ea; 
+}
+
+h1, h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
+    transition: transform 0.3s; 
+}
+
+h1:hover, h2:hover {
+    transform: scale(1.05); 
+}
+
+button {
+    background-color: #6200ea; 
+    color: white; 
+    border: none;
+    border-radius: 10px; 
+    padding: 15px 30px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+    font-family: 'Permanent Marker', cursive; 
+}
+
+button:hover {
+    background-color: #3700b3; 
+    transform: scale(1.05); 
+}
+
+input {
+    padding: 10px; 
+    border: 2px solid #6200ea; 
+    border-radius: 5px; 
+    transition: border-color 0.3s; 
+    font-family: 'Permanent Marker', cursive; 
+    font-size: 18px; 
+    color: #333; 
+}
+
+input:focus {
+    border-color: #3700b3; 
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.5); 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#resultado {
+    animation: fadeIn 0.5s ease-in-out; 
+    margin-top: 20px; 
+}
